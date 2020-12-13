@@ -7,6 +7,6 @@ public class Test extends TestCase {
 	
     
     public void testHello() {
-    	Assert.assertEquals("hello", "hello");
+    	Assert.assertEquals("hello", "hello1");
     }
 }
