@@ -15,8 +15,16 @@
 
 Hello, Jenkins!!!
 
-Second change...  Success!!!
+- Problem: 
+    using GIT_ASKPASS to set credentials 
+     > /usr/bin/git fetch --tags --progress https://github.com/lumpchen/testjenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+     > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+     > /usr/bin/git rev-parse origin/master^{commit} # timeout=10
+    ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+    ERROR: Build step failed with exception
+    java.io.IOException: Cannot retrieve Git metadata for the build
 
-Try again...
+- Solution:
+	Change */master to */main
 </body>
 </html>
