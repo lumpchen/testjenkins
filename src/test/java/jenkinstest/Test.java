@@ -13,4 +13,8 @@ public class Test extends TestCase {
     public void testHello1() {
     	Assert.assertEquals("hello", "hello");
     }
+
+    public void testHello2() {
+    	Assert.assertEquals("hello", "hello");
+    }
 }
